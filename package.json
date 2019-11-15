@@ -1,0 +1,48 @@
+{
+  "name": "worldcraft-poc",
+  "version": "1.0.0",
+  "description": "This is the proof-of-concept repo for the HWHS Compsci's worldcraft game. ",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HWHSCompsci/worldcraft-poc.git"
+  },
+  "author": "H. Rueger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HWHSCompsci/worldcraft-poc/issues"
+  },
+  "homepage": "https://github.com/HWHSCompsci/worldcraft-poc#readme",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --open",
+    "lint": "tslint --project .",
+    "failedstart": "concurrently \"tsc -w\" \"http-server\" \"open-cli http://localhost:8080/index.html --background\""
+  },
+  "devDependencies": {
+    "@types/es6-shim": "^0.31.39",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.3",
+    "css-loader": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "imports-loader": "^0.8.0",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.2",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "babylonjs": "^4.0.3",
+    "babylonjs-gui": "^4.0.3",
+    "babylonjs-loaders": "^4.0.3",
+    "babylonjs-materials": "^4.0.3",
+    "cannon": "^0.6.2",
+    "earcut": "^2.1.5",
+    "lodash": "^4.17.11",
+    "oimo": "^1.0.9",
+    "rxjs": "^6.5.2",
+    "tslint": "^5.20.1"
+  }
+}
